@@ -1,6 +1,20 @@
 #include <cs50.h>
 #include <stdio.h> 
 
+/*
+
+    Mr. Ramirez's Notes
+    
+    Nice effort! This code compiles and usually returns the correct output. There are cases where this code can be broken.
+    
+    Issues:
+    1. The first while loop will run forever if s is less than 9. You never reprompt the user to enter a new value
+    2. Your variable names are not descriptive. Someone looking at your code would not know what s, e, and y stand for. 
+       Names such as start, end, and years are better.
+    3. Your style is inconsistent. Remember to indent code within loops, you have not done that here. This makes the code harder to read.
+
+*/
+
 int main(void) { 
     //declared a variable that asks the person for a start population
     int s = get_int("Start Population: "); 
